@@ -26,7 +26,7 @@ module OrbitedHelper
   # [:delayed_connect]
   #   Assign it to true to delay the connection (Boolean)
   #
-  def stomp_connect(channels, options = {})
+  def stomp_connect(channels, options = {}, html_options = {})
     callbacks = options[:callbacks] || {}
     channels = [channels] unless channels.is_a? Array
     subscriptions = channels.map {|channel| "stomp.subscribe('/topic/#{channel}')"}.join(';')
@@ -63,7 +63,7 @@ module OrbitedHelper
         "Element.observe(window, 'beforeunload', function(){stomp.reset()});"
     end
     js << "});"
-    javascript_tag js
+    javascript_tag js, html_options.merge(:type => Mime::JS)
   end
 
 private

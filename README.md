@@ -1,3 +1,6 @@
+This is forked from git://github.com/mallio/orbited 
+===================================================
+
 Orbited on Rails
 ================
 
@@ -42,7 +45,7 @@ Install the STOMP gem with `gem install stomp`.
 To install this plugin, type
 
 	cd your/rails/app
-	script/plugin install git://github.com/mallio/orbited
+	script/plugin install git://github.com/phuphighter/orbited
 
 This will create an `orbited.yml` file in your config directory. 
 
