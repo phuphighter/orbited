@@ -1,8 +1,7 @@
-This is forked from git://github.com/mallio/orbited 
-===================================================
-
 Orbited on Rails
 ================
+
+This is forked from git://github.com/mallio/orbited 
 
 Orbited on Rails is a plugin that makes it easy for your Rails application to use Comet to push changes to your users.
 
